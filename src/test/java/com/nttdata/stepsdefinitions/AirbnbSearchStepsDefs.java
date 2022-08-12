@@ -7,6 +7,8 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 
+import java.io.File;
+
 public class AirbnbSearchStepsDefs {
 
     @Steps
@@ -14,6 +16,7 @@ public class AirbnbSearchStepsDefs {
 
     @Given("que me enuentro en el login de Airbnb")
     public void que_me_enuentro_en_el_login_de_airbnb() {
+
         airbnbSearchSteps.clickClose();
     }
     @When("busco {string}")
