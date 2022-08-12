@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.concurrent.TimeUnit;
 
 public class LoginScreen extends PageObject {
-    @AndroidFindBy(accessibility = "Close")
+    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Close\"]")
     private WebElement btnClose;
 
     public void clickClose(){
